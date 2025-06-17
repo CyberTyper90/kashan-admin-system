@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=UserManager
+comment1.params=username\ password
+comment1.target=boolean\ validateAdmin(java.lang.String,\ java.lang.String)
+comment2.params=email\ password
+comment2.target=Student\ validateStudent(java.lang.String,\ java.lang.String)
+comment3.params=studentID
+comment3.target=boolean\ removeStudent(java.lang.String)
+comment4.params=studentID\ updatedStudent
+comment4.target=void\ updateStudent(java.lang.String,\ Student)
+numComments=5
