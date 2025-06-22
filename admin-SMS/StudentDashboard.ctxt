@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=StudentDashboard
+comment1.params=stage\ main\ student
+comment1.target=StudentDashboard(javafx.stage.Stage,\ SMS,\ Student)
+comment2.params=
+comment2.target=void\ show()
+numComments=3
