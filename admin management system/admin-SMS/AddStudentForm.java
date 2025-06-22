@@ -15,7 +15,7 @@ public class AddStudentForm {
     }
 
     public void show() {
-        Label titleLabel = new Label("Add New Student");
+        Label titleLabel = new Label("Add New User");
         titleLabel.setStyle("-fx-font-size: 20; -fx-font-weight: bold;");
 
         TextField fullNameField = new TextField();
@@ -73,7 +73,7 @@ public class AddStudentForm {
                     parentContactField.getText()
                 );
                 UserManager.students.add(newStudent);
-                showAlert(Alert.AlertType.INFORMATION, "Student added successfully!");
+                showAlert(Alert.AlertType.INFORMATION, "User added successfully!");
                 clearFields(fullNameField, dobField, genderField, studentIDField, 
                            phoneField, emailField, passwordField, parentNameField, parentContactField);
             }

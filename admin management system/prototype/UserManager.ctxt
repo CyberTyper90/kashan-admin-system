@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=UserManager
+comment1.params=user\ pass\ role
+comment1.target=boolean\ validate(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.util.ArrayList\ getAllUsers()
+comment3.params=user
+comment3.target=void\ addUser(User)
+comment4.params=user
+comment4.target=void\ removeUser(User)
+numComments=5

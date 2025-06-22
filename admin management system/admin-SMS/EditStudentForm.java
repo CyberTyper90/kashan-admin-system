@@ -28,7 +28,7 @@ public class EditStudentForm {
         TextField dobField = new TextField(student.getDob());
         TextField genderField = new TextField(student.getGender());
         TextField studentIDField = new TextField(student.getStudentID());
-        studentIDField.setEditable(false); // ID shouldn't be changed
+        
         TextField phoneField = new TextField(student.getPhone());
         TextField emailField = new TextField(student.getEmail());
         PasswordField passwordField = new PasswordField();
