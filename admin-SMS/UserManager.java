@@ -4,7 +4,7 @@ public class UserManager {
     public static ArrayList<Student> students = new ArrayList<>();
 
     public static boolean validateAdmin(String username, String password) {
-        return "@".equals(username) && "@".equals(password);
+        return "#".equals(username) && "#".equals(password);
     }
 
     public static Student validateStudent(String email, String password) {
