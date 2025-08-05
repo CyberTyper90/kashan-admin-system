@@ -7,8 +7,8 @@ import javafx.stage.Stage;
 
 public class EditStudentForm {
     public Stage getStage() {
-    return stage;
-}
+        return stage;
+    }
 
     private Stage stage;
     private Student student;
@@ -28,7 +28,7 @@ public class EditStudentForm {
         TextField dobField = new TextField(student.getDob());
         TextField genderField = new TextField(student.getGender());
         TextField studentIDField = new TextField(student.getStudentID());
-        
+
         TextField phoneField = new TextField(student.getPhone());
         TextField emailField = new TextField(student.getEmail());
         PasswordField passwordField = new PasswordField();
@@ -62,25 +62,25 @@ public class EditStudentForm {
 
         Button updateButton = new Button("Save Changes");
         updateButton.setOnAction(e -> {
-            Student updatedStudent = new Student(
-                fullNameField.getText(),
-                dobField.getText(),
-                genderField.getText(),
-                student.getStudentID(), // Keep original ID
-                phoneField.getText(),
-                emailField.getText(),
-                passwordField.getText(),
-                parentNameField.getText(),
-                parentContactField.getText()
-            );
-            UserManager.updateStudent(student.getStudentID(), updatedStudent);
-            
-            Alert success = new Alert(Alert.AlertType.INFORMATION);
-            success.setContentText("Student information updated successfully!");
-            success.showAndWait();
-            
-            stage.close(); // Close the edit form
-        });
+                    Student updatedStudent = new Student(
+                            fullNameField.getText(),
+                            dobField.getText(),
+                            genderField.getText(),
+                            student.getStudentID(), // Keep original ID
+                            phoneField.getText(),
+                            emailField.getText(),
+                            passwordField.getText(),
+                            parentNameField.getText(),
+                            parentContactField.getText()
+                        );
+                    UserManager.updateStudent(student.getStudentID(), updatedStudent);
+
+                    Alert success = new Alert(Alert.AlertType.INFORMATION);
+                    success.setContentText("Student information updated successfully!");
+                    success.showAndWait();
+
+                    stage.close(); // Close the edit form
+            });
 
         Button backButton = new Button("Cancel");
         backButton.setOnAction(e -> stage.close());
@@ -89,10 +89,8 @@ public class EditStudentForm {
         layout.setPadding(new Insets(20));
         layout.getChildren().addAll(titleLabel, grid, updateButton, backButton);
 
-        Scene scene = new Scene(layout, 500, 600);
-        stage.setScene(scene);
+        Scene scene = new Scene(layout, 500, 600);    stage.setScene(scene);
         stage.setTitle("Edit Student");
         stage.show();
-        
     }
 }
